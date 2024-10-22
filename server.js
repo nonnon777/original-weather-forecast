@@ -30,3 +30,6 @@ console.log("Listening on http://localhost:8000");
 await serve(handler, { port: 8000 });
 
 //ブランチの練習
+//おなにいいいいいい
+//おっぱいいいいいいい
+//オナニーの練習
