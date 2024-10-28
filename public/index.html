@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寝屋川市の1時間ごとの天気</title>
-    <script defer src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天気情報アプリ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>寝屋川市の1時間ごとの天気予報</h1>
-    <div id="weather"></div>
+  <div class="container">
+    <div class="current-weather">
+      <h1 id="city-name">寝屋川市</h1>
+      <h2 id="current-temp">25°C</h2>
+      <p id="weather-desc">曇り時々晴れ</p>
+      <p>最高: <span id="max-temp">26°C</span> / 最低: <span id="min-temp">17°C</span></p>
+      <p id="current-date"></p> <!-- 日付と曜日を表示する要素 -->
+      <p id="current-time"></p> <!-- 現在時刻を表示する要素 -->
+    </div>
+
+    <div class="hourly">
+      <h3>3時間ごとの予報</h3>
+      <div class="hourly-row" id="scrollable-row">
+        <!-- JavaScriptで自動生成 -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
