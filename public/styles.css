@@ -1,66 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header {
-    text-align: center;
-  }
-  
-  .temperature {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .hourly {
-    margin-top: 10px;
-  }
-  
-  .hourly-row {
-    display: flex;
-    overflow-x: scroll; /* 水平スクロールを有効にする */
-    gap: 10px;
-    padding: 10px 0;
-  }
-  
-  .hour {
-    flex: 0 0 auto; /* 水平方向に連続して並べる */
-    width: 80px;
-    text-align: center;
-  }
-  
-  .weather-icon {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-  }
-  
-  .hourly-row::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .hourly-row::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.current-weather h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.current-weather h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.current-weather p {
+  font-size: 16px;
+  color: #666;
+}
+
+.hourly {
+  margin-top: 20px;
+}
+
+.hourly-row {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.hour {
+  flex: 0 0 auto;
+  width: 80px;
+  background-color: rgba(135, 206, 235, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-top: 5px;
+}

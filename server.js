@@ -13,6 +13,8 @@ const handler = async (req) => {
       ? "text/html"
       : filePath.endsWith(".js")
       ? "application/javascript"
+      : filePath.endsWith(".css")
+      ? "text/css"
       : "text/plain";
 
     return new Response(file, {
@@ -23,13 +25,3 @@ const handler = async (req) => {
     });
   } catch (error) {
     return new Response("Not Found", { status: 404 });
-  }
-};
-
-console.log("Listening on http://localhost:8000");
-await serve(handler, { port: 8000 });
-
-//ブランチの練習
-//おなにいいいいいい
-//おっぱいいいいいいい
-//オナニーの練習
