@@ -25,3 +25,8 @@ const handler = async (req) => {
     });
   } catch (error) {
     return new Response("Not Found", { status: 404 });
+  }
+};
+
+// サーバーを起動
+serve(handler);
